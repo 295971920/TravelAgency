@@ -3,6 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+/* 解决移动端的300毫秒延时 */
 import fastClick from 'fastclick'
 import 'styles/reset.css'
 import 'styles/border.css'
