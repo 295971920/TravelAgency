@@ -22,11 +22,11 @@ export default {
 <!-- 1rem = html  font-size = 50px   -->
 <!-- 43px = .86rem   即 86/100 -->
 <style lang="stylus" scoped>
-@improt '~styles/varibles.sty'
+@import '~styles/varibles.styl'
 .header
   display flex
   line-height 0.86rem
-  background $bgColor
+  background: $bgColor
   color #fff
   .header-left
     width 0.64rem
