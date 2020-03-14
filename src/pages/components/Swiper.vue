@@ -1,8 +1,8 @@
 <template>
   <div class="wrapper">
-    <swiper :options="swiperOption">
+    <swiper :options="swiperOption" v-if="showSwiper">
         <!-- slides -->
-        <swiper-slide v-for=" item of swiperList" :key="item.id">
+        <swiper-slide v-for=" item of list" :key="item.id">
           <img class="swiper-img" :src="item.imgUrl" alt="" >
         </swiper-slide>
         <div class="swiper-pagination"  slot="pagination"></div>
@@ -16,6 +16,9 @@
 <script>
 export default {
   name: 'HomeSwiper',
+  props: {
+    list: Array
+  },
   data () {
     return {
       swiperOption: {
@@ -23,16 +26,13 @@ export default {
         pagination: '.swiper-pagination',
         /* loop 设置循环轮播 */
         loop: true
-      },
-      swiperList: [{
-        id: '0001',
-        // imgUrl: 'http://img1.qunarzz.com/piao/fusion/1802/e3/62ce7362ca051d02.jpg_640x200_6db551b7.jpg'
-        imgUrl: 'static/img/swiper/0001.jpg'
-      }, {
-        id: '0002',
-        // imgUrl: 'http://img1.qunarzz.com/piao/fusion/1801/93/ce59d182aca07102.jpg_640x200_ba03d44c.jpg'
-        imgUrl: 'static/img/swiper/0002.jpg'
-      }]
+      }
+    }
+  },
+  /* v-if="list.length" 作用域是去出除swiper从空数组开始创建带来的多余角标 */
+  computed: {
+    showSwiper () {
+      return this.list.length
     }
   }
 }

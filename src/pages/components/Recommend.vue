@@ -4,7 +4,7 @@
     <ul>
       <li
         class="item border-bottom"
-        v-for="item of recommendList"
+        v-for="item of list"
         :key="item.id"
       >
         <img class="item-img" :src="item.imgUrl" />
@@ -21,25 +21,8 @@
 <script>
 export default {
   name: 'HomeWeekend',
-  data () {
-    return {
-      recommendList: [{
-        id: '0001',
-        imgUrl: 'static/img/recommend/0001.jpg',
-        title: '大连圣亚海洋世界',
-        desc: '浪漫大连首站，浪漫的海洋主题乐园'
-      }, {
-        id: '0002',
-        imgUrl: 'static/img/recommend/0002.jpg',
-        title: '珠海跟团游一天澳门',
-        desc: '澳门美景全游览，感受极富魅力的澳门风情'
-      }, {
-        id: '0003',
-        imgUrl: 'static/img/recommend/0002.jpg',
-        title: '深圳跟团一天游澳门',
-        desc: '大三巴牌坊、威尼斯人、新葡京或渔人码头'
-      }]
-    }
+  props: {
+    list: Array
   }
 }
 </script>

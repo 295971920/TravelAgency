@@ -1,6 +1,6 @@
 <template>
   <div class="icons">
-    <swiper>
+    <swiper :options="swiperOption">
       <swiper-slide v-for="(page, index) of pages" :key="index">
         <div class="icon" v-for=" item of page" :key="item.id">
           <div class="icon-img">
@@ -16,59 +16,21 @@
 <script>
 export default {
   name: 'HomeIcons',
+  props: {
+    list: Array
+  },
   data () {
     return {
-      iconList: [{
-        id: '0001',
-        imgUrl: 'static/img/icons/0001.png',
-        desc: '景点门票'
-      },
-      {
-        id: '0002',
-        imgUrl: 'static/img/icons/0002.png',
-        desc: '滑雪季'
-      },
-      {
-        id: '0003',
-        imgUrl: 'static/img/icons/0003.png',
-        desc: '泡温泉'
-      },
-      {
-        id: '0004',
-        imgUrl: 'static/img/icons/0004.png',
-        desc: '动植物园'
-      },
-      {
-        id: '0005',
-        imgUrl: 'static/img/icons/0005.png',
-        desc: '一日游'
-      },
-      {
-        id: '0006',
-        imgUrl: 'static/img/icons/0006.png',
-        desc: '必游榜单'
-      },
-      {
-        id: '0007',
-        imgUrl: 'static/img/icons/0007.png',
-        desc: '自然风光'
-      },
-      {
-        id: '0008',
-        imgUrl: 'static/img/icons/0008.png',
-        desc: '全部'
-      },
-      {
-        id: '0009',
-        imgUrl: 'static/img/icons/0008.png',
-        desc: '周边游'
-      }]
+      swiperOption: {
+        /* 轮播图不自动滚动 */
+        autoPlay: false
+      }
     }
   },
   computed: {
     pages () {
       const pages = []
-      this.iconList.forEach((item, index) => {
+      this.list.forEach((item, index) => {
         const page = Math.floor(index / 8)
         if (!pages[page]) {
           pages[page] = []
