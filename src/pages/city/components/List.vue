@@ -1,0 +1,159 @@
+<template>
+  <div class="list" ref= "wrapper">
+    <div>
+      <!-- .area*3>.title.border-topbottom -->
+      <div class="area">
+        <div class="title border-topbottom">当前城市</div>
+        <div class="button-list">
+            <div class="button-wrapper">
+              <div class="button">北京</div>
+            </div>
+        </div>
+      </div>
+      <div class="area">
+        <div class="title border-topbottom">热门城市</div>
+        <div class="button-list">
+            <div class="button-wrapper">
+              <div class="button">北京</div>
+            </div>
+            <div class="button-wrapper">
+              <div class="button">北京</div>
+            </div>
+            <div class="button-wrapper">
+              <div class="button">北京</div>
+            </div>
+            <div class="button-wrapper">
+              <div class="button">北京</div>
+            </div>
+            <div class="button-wrapper">
+              <div class="button">北京</div>
+            </div>
+            <div class="button-wrapper">
+              <div class="button">北京</div>
+            </div>
+            <div class="button-wrapper">
+              <div class="button">北京</div>
+            </div>
+        </div>
+      </div>
+      <div class="area">
+        <!-- start -->
+        <div class="title border-topbottom">A</div>
+        <div class="item-list">
+          <div class="item border-bottom">阿拉尔</div>
+          <div class="item border-bottom">阿拉尔</div>
+          <div class="item border-bottom">阿拉尔</div>
+          <div class="item border-bottom">阿拉尔</div>
+          <div class="item border-bottom">阿拉尔</div>
+          <div class="item border-bottom">阿拉尔</div>
+        </div>
+        <!-- start-->
+        <div class="title border-topbottom">B</div>
+        <div class="item-list">
+          <div class="item border-bottom">阿拉尔</div>
+          <div class="item border-bottom">阿拉尔</div>
+          <div class="item border-bottom">阿拉尔</div>
+          <div class="item border-bottom">阿拉尔</div>
+          <div class="item border-bottom">阿拉尔</div>
+          <div class="item border-bottom">阿拉尔</div>
+        </div>
+        <!-- start -->
+        <div class="title border-topbottom">C</div>
+        <div class="item-list">
+          <div class="item border-bottom">阿拉尔</div>
+          <div class="item border-bottom">阿拉尔</div>
+          <div class="item border-bottom">阿拉尔</div>
+          <div class="item border-bottom">阿拉尔</div>
+          <div class="item border-bottom">阿拉尔</div>
+          <div class="item border-bottom">阿拉尔</div>
+        </div>
+        <!-- start -->
+        <div class="title border-topbottom">D</div>
+        <div class="item-list">
+          <div class="item border-bottom">阿拉尔</div>
+          <div class="item border-bottom">阿拉尔</div>
+          <div class="item border-bottom">阿拉尔</div>
+          <div class="item border-bottom">阿拉尔</div>
+          <div class="item border-bottom">阿拉尔</div>
+          <div class="item border-bottom">阿拉尔</div>
+        </div>
+        <!-- start-->
+        <div class="title border-topbottom">E</div>
+        <div class="item-list">
+          <div class="item border-bottom">阿拉尔</div>
+          <div class="item border-bottom">阿拉尔</div>
+          <div class="item border-bottom">阿拉尔</div>
+          <div class="item border-bottom">阿拉尔</div>
+          <div class="item border-bottom">阿拉尔</div>
+          <div class="item border-bottom">阿拉尔</div>
+        </div>
+        <!-- start -->
+        <div class="title border-topbottom">F</div>
+        <div class="item-list">
+          <div class="item border-bottom">阿拉尔</div>
+          <div class="item border-bottom">阿拉尔</div>
+          <div class="item border-bottom">阿拉尔</div>
+          <div class="item border-bottom">阿拉尔</div>
+          <div class="item border-bottom">阿拉尔</div>
+          <div class="item border-bottom">阿拉尔</div>
+        </div>
+        <!-- end-->
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+import Bscroll from 'better-scroll'
+export default {
+  name: 'CityList',
+  mounted () {
+    this.scroll = new Bscroll(this.$refs.wrapper)
+  }
+}
+</script>
+
+<style lang="stylus" scoped="scoped">
+@import '~styles/varibles.styl'
+/*   两者的写法是等价的，也就是 :before ==::before
+    :befor是css2的写法，::before是css3的写法,出现在css3中是为了区分伪类选择器，比如:hover等
+    :before的兼容性要比::before好 ，不过在H5开发中建议使用::before比较好
+ */
+.border-topbottom
+  &:before
+    border-color #777
+  &:after
+    border-color #777
+.border-bottom
+  &:before
+    border-color #777
+.list
+  overflow: hidden
+  position: absolute
+  top: 1.58rem
+  left: 0
+  right: 0
+  bottom: 0
+  .title
+    line-height .54rem
+    background #eee
+    padding-left .2rem
+    color #666
+    font-size .26rem
+  .button-list
+    overflow hidden
+    padding .1rem .6rem .1rem .1rem /* 顺序上右下左*/
+    .button-wrapper
+      float left
+      width 33.33%
+      .button
+        margin .1rem
+        padding .1rem 0
+        text-align center
+        border .02rem solid #ccc
+        border-radius .06rem
+  .item-list
+    .item
+      line-height .56rem
+      padding-left: .2rem
+</style>
