@@ -2,8 +2,15 @@
   <div class="city">
     <city-header></city-header>
     <city-search></city-search>
-    <city-list :cities= "cities" :hot="hotCities"></city-list>
-    <city-alphabet :cities= "cities"></city-alphabet>
+    <city-list
+     :cities= "cities"
+     :hot="hotCities"
+     :letter = "letter"
+       ></city-list>
+    <city-alphabet
+     :cities= "cities"
+     @change= "handleLetterChange"
+     ></city-alphabet>
   </div>
 </template>
 
@@ -24,7 +31,8 @@ export default {
   data () {
     return {
       cities: {},
-      hotCities: []
+      hotCities: [],
+      letter: ''
     }
   },
   methods: {
@@ -39,6 +47,11 @@ export default {
         this.cities = data.cities
         this.hotCities = data.hotCities
       }
+    },
+    // city-alphabet 中通过监听@change 触发handleLetterChange()
+    handleLetterChange (letter) {
+      // 将接收到的 letter 往 city-list传递
+      this.letter = letter
     }
   },
   mounted () {
