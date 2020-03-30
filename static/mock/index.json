@@ -1,0 +1,101 @@
+{
+  "ret": true,
+  "data": {
+    "swiperList": [{
+        "id": "0001",
+        "imgUrl": "static/img/swiper/0001.jpg"
+      },{
+        "id": "0002",
+        "imgUrl": "static/img/swiper/0002.jpg"
+      }],
+    "iconList": [{
+        "id": "0001",
+        "imgUrl": "static/img/icons/0001.png",
+        "desc": "景点门票"
+      },{
+        "id": "0002",
+        "imgUrl": "static/img/icons/0002.png",
+        "desc": "滑雪季"
+      },{
+        "id": "0003",
+        "imgUrl": "static/img/icons/0003.png",
+        "desc": "泡温泉"
+      },{
+        "id": "0004",
+        "imgUrl": "static/img/icons/0004.png",
+        "desc": "动植物园"
+      },{
+        "id": "0005",
+        "imgUrl": "static/img/icons/0005.png",
+        "desc": "一日游"
+      },{
+        "id": "0006",
+        "imgUrl": "static/img/icons/0006.png",
+        "desc": "必游榜单"
+      },{
+        "id": "0007",
+        "imgUrl": "static/img/icons/0007.png",
+        "desc": "自然风光"
+      },{
+        "id": "0008",
+        "imgUrl": "static/img/icons/0008.png",
+        "desc": "全部"
+      },{
+        "id": "0009",
+        "imgUrl": "static/img/icons/0008.png",
+        "desc": "周边游"
+    }],
+    "recommendList": [{
+        "id": "0001",
+        "imgUrl": "static/img/recommend/0001.jpg",
+        "title": "故宫",
+        "desc": "东方宫殿建筑代表，世界宫殿建筑典范"
+      }, {
+        "id": "0002",
+        "imgUrl": "static/img/recommend/0002.jpg",
+        "title": "南山滑雪场",
+        "desc": "北京专业级滑雪圣地"
+      }, {
+        "id": "0003",
+        "imgUrl": "static/img/recommend/0003.jpg",
+        "title": "天安门广场",
+        "desc": "我爱北京天安门，天安门上太阳升"
+      }, {
+        "id": "0004",
+        "imgUrl": "static/img/recommend/0004.jpg",
+        "title": "水立方",
+        "desc": "中国的荣耀，阳光下的晶莹水滴"
+      }, {
+        "id": "0005",
+        "imgUrl": "static/img/recommend/0005.jpg",
+        "title": "温都水城养生馆",
+        "desc": "各种亚热带植物掩映其间仿佛置身热带雨林"
+      }],
+    "weekendList": [{
+        "id": "0001",
+        "imgUrl": "static/img/weekend/0001.jpg",
+        "title": "北京温泉排行榜",
+        "desc": "细数北京温泉，温暖你的冬天"
+      }, {
+        "id": "0002",
+        "imgUrl": "static/img/weekend/0002.jpg",
+        "title": "北京必游TOP10",
+        "desc": "来北京必去的景点非这些地方莫属"
+      }, {
+        "id": "0003",
+        "imgUrl": "static/img/weekend/0003.jpg",
+        "title": "寻找北京的皇城范儿",
+        "desc": "数百年的宫廷庙宇，至今依旧威严霸气"
+      }, {
+        "id": "0004",
+        "imgUrl": "static/img/weekend/0004.jpg",
+        "title": "学生最爱的博物馆",
+        "desc": "周末干嘛？北京很多博物馆已经免费开放啦"
+      }, {
+        "id": "0005",
+        "imgUrl": "static/img/weekend/0005.jpg",
+        "title": "儿童剧场，孩子的乐园",
+        "desc": "带宝贝观看演出，近距离体验艺术的无穷魅力"
+      }]
+  }
+}
