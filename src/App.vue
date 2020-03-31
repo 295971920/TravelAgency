@@ -1,6 +1,9 @@
 <template>
   <div id="app">
-    <router-view/>
+    <!-- keep-alive 是vue自带属性 将json数据写入内存中 解决json冲加载-->
+    <keep-alive>
+      <router-view/>
+    </keep-alive>
   </div>
 </template>
 
