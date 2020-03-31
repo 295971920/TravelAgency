@@ -62,6 +62,7 @@ export default {
     handleCityClick (city) {
       // this.$store.dispatch('changeCity', city)
       this.changeCity(city)
+      // 路由跳转
       this.$router.push('/')
     },
     ...mapMutations(['changeCity'])

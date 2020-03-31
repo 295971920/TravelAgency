@@ -11,13 +11,13 @@ export default new Vuex.Store({
     changeCity (ctx, city) {
       ctx.commit('changeCity', city)
     }
-  },
-  /* 作用类似computed */
-  getters: {
-    doubleCity (state) {
-      return state.city + ' ' + state.city
-    }
   }
+  /* 作用类似computed */
+  // getters: {
+  //   doubleCity (state) {
+  //     return state.city + ' ' + state.city
+  //   }
+  // }
 })
 
 // let defaultCity = '上海'
