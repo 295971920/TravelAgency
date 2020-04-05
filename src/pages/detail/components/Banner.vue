@@ -38,7 +38,7 @@ export default {
 }
 </script>
 
-<style lang="stylus" scoped="scoped">
+<style lang="stylus" scoped>
 .banner
   position relative
   overflow hidden

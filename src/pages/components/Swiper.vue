@@ -38,7 +38,7 @@ export default {
 }
 </script>
 
-<style lang="stylus" scoped="scoped">
+<style lang="stylus" scoped>
   /* >>> 向上传递，解决scoped作用域*/
   .wrapper >>> .swiper-pagination-bullet-active
     background red !important

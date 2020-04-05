@@ -82,7 +82,7 @@ export default {
 }
 </script>
 
-<style lang="stylus" scoped="scoped">
+<style lang="stylus" scoped>
 @import '~styles/varibles.styl'
 /*   两者的写法是等价的，也就是 :before ==::before
     :befor是css2的写法，::before是css3的写法,出现在css3中是为了区分伪类选择器，比如:hover等
