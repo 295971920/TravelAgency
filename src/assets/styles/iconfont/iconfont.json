@@ -6,6 +6,13 @@
   "description": "湛江市远景旅行社ICO图标",
   "glyphs": [
     {
+      "icon_id": "166644",
+      "name": "图片",
+      "font_class": "tupian",
+      "unicode": "e63b",
+      "unicode_decimal": 58939
+    },
+    {
       "icon_id": "566360",
       "name": "箭头",
       "font_class": "jiantou",
