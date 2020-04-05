@@ -25,7 +25,9 @@ export default {
   },
   methods: {
     handleScroll () {
+      // 获取当前滚动的位置
       const top = document.documentElement.scrollTop
+      // 判断位置进行渐显与隐藏
       if (top > 60) {
         let opacity = top / 140
         opacity = opacity > 1 ? 1 : opacity
@@ -38,6 +40,10 @@ export default {
   },
   activated () {
     window.addEventListener('scroll', this.handleScroll)
+  },
+  // 解决addEventListener作用域对其他页面产生影响
+  deactivated () {
+    window.removeEventListener('scroll', this.handleScroll)
   }
 }
 </script>
