@@ -15,13 +15,17 @@
         </div>
       </div>
     </div>
+    <!-- 将common-gallary组件放到FadeAnimation插槽中 -->
+    <fade-animation>
     <!-- 引入Grallary 组件展示内容 绑定点击关闭事件  -->
-    <common-gallary :imgs="bannerImgs" v-show="showGallary" @close="handleGallaryClose"></common-gallary>
+      <common-gallary :imgs="bannerImgs" v-show="showGallary" @close="handleGallaryClose"></common-gallary>
+    </fade-animation>
   </div>
 </template>
 
 <script>
 import CommonGallary from 'common/gallary/Gallary'
+import FadeAnimation from 'common/fade/FadeAnimation'
 export default {
   name: 'DetailBanner',
   props: {
@@ -44,7 +48,8 @@ export default {
     }
   },
   components: {
-    CommonGallary
+    CommonGallary,
+    FadeAnimation
   }
 }
 </script>
