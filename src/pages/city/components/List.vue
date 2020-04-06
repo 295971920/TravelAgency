@@ -1,3 +1,4 @@
+<!-- 当前城市与热门城市 -->
 <template>
   <div class="list" ref= "wrapper">
     <div>

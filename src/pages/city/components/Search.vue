@@ -1,3 +1,4 @@
+<!-- 城市搜索 -->
 <template>
   <div class="search">
     <input v-model="keyword" type="text" class="search-input" placeholder="输入城市名或拼音">

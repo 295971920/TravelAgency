@@ -1,10 +1,12 @@
+<!-- 城市列表 -->
 <template>
   <ul class="list">
+    <!-- prevent 解决拖动选择时页面抖动 -->
     <li class="item"
       v-for="item of letters"
       :key="item"
       :ref="item"
-      @touchstart = "handleTouchStart"
+      @touchstart.prevent = "handleTouchStart"
       @touchmove = "handleTouchMove"
       @touchend = "handleTouchEnd"
       @click="handleLetterClick"
