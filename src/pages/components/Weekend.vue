@@ -1,3 +1,4 @@
+<!-- 首页： 周末去哪儿模块 -->
 <template>
   <div>
     <div class="title">周末去哪儿</div>

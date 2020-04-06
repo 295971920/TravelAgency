@@ -1,11 +1,13 @@
+<!-- 图片详情页 图片详情 -->
 <template>
   <div class="container" @click="handleGallaryClick">
     <div class="wrapper">
-      <swiper :options="swiperOption">
+      <swiper :options="swiperOptions">
           <!-- slides -->
           <swiper-slide v-for="(item, index) in imgs" :key="index">
             <img class="gallary-img" :src="item" alt="" >
           </swiper-slide>
+          <!-- 分页器 -->
           <div class="swiper-pagination" slot="pagination"></div>
           <!-- <div class="swiper-button-prev" slot="button-prev"></div>
           <div class="swiper-button-next" slot="button-next"></div>
@@ -28,7 +30,7 @@ export default {
   },
   data () {
     return {
-      swiperOption: {
+      swiperOptions: {
         pagination: '.swiper-pagination',
         paginationType: 'fraction',
         // 将observe应用于Swiper的父元素。当Swiper的父元素变化时，例如window.resize，Swiper更新。
@@ -46,26 +48,27 @@ export default {
 }
 </script>
 
-<style lang="stylus" scoped="scoped">
+<style lang="stylus" scoped>
   .container >>> .swiper-container
-    overflow: inherit
-  .container
-    display flex
-    flex-direction column
-    justify-content center
-    position fixed
-    height 100%
-    left: 0;
-    right: 0;
-    bottom 0
-    background: #000;
-    .wapper
-      background #FFFFFF
-      width 100%
-      padding-bottom 100%
-      .gallary-img
-        width 100%
-    .swiper-pagination
-      color #fff
-      bottom -1rem
+      overflow: inherit
+    .container
+      display: flex
+      flex-direction: column
+      justify-content: center
+      z-index: 99
+      position: fixed
+      left: 0
+      right: 0
+      top: 0
+      bottom: 0
+      background: #000
+      .wrapper
+        height: 0
+        width: 100%
+        padding-bottom: 100%
+        .gallary-img
+          width: 100%
+        .swiper-pagination
+          color: #fff
+          bottom: -1rem
 </style>

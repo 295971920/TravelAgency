@@ -1,3 +1,4 @@
+<!-- 详情页头部 -->
 <template>
   <div>
     <router-link tag="div" to="/" class="header-abs" v-if="showABs">

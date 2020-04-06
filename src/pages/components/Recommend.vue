@@ -1,3 +1,4 @@
+<!-- 热销推荐 -->
 <template>
   <div>
     <div class="title">热销推荐</div>

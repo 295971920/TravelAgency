@@ -1,15 +1,20 @@
+<!-- 首页头部 -->
 <template>
   <div class="header">
     <div class="header-left">
+      <!-- 返回箭头图标 -->
       <div class="iconfont back-icon" >&#xe624;</div>
       </div>
+      <!-- 搜索输入框 -->
     <div class="header-input">
       <span class="iconfont">&#xe632;</span>
       输入城市/景点/游玩主题
     </div>
+    <!-- 城市列表 -->
     <router-link to="/city">
       <div class="header-right">
           {{this.city}}
+          <!-- 倒三角：更多选择图标 -->
         <span class="iconfont arrow-icon">&#xe64a;</span>
       </div>
     </router-link>

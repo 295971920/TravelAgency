@@ -1,6 +1,9 @@
+<!-- 详情页内容展示组件 -->
 <template>
   <div>
+    <!-- 遍历Detail中Ajax获取到的数据  -->
     <div class="item" v-for="(item, index) of list" :key="index.title">
+      <!-- 展示遍历到的名字-->
       <div class="item-title border-bottom">
         <span class="item-title-icon"></span>
         {{item.title}}

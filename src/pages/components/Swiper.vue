@@ -1,3 +1,4 @@
+<!-- 首页轮播图 -->
 <template>
   <div class="wrapper">
     <swiper :options="swiperOption" v-if="showSwiper">

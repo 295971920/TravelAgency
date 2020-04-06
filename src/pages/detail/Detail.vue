@@ -1,3 +1,4 @@
+<!-- 详情页 -->
 <template>
   <div>
     <detail-banner

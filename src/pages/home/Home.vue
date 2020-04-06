@@ -1,9 +1,15 @@
+<!-- 首页 -->
 <template>
   <div class="class">
+    <!-- 引入头部组件 -->
     <home-header ></home-header>
+    <!-- 轮播图组件 -->
     <home-swiper :list= "swiperList"></home-swiper>
+    <!-- icon 图标组件 -->
     <home-icons :list="iconList"></home-icons>
+    <!-- 热销推荐组件 -->
     <home-recommend :list="recommendList"></home-recommend>
+    <!-- 周末去哪儿组件 -->
     <home-weekend :list="weekendList"></home-weekend>
   </div>
 </template>
